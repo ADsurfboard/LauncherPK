@@ -8,7 +8,7 @@ const SITE = {
     eventAt: "2026/10/20 00:00:00 GMT+0800",
     eventRef: "https://github.com/Meloong-Git/PCL/releases/tag/2.99.0.0",
     // 本项目仓库，格式 owner/name，留空则不显示相关链接
-    repo: "",
+    repo: "cnklpz/LauncherPK",
     dataUpdatedAt: "2026/11/02"
 };
 
@@ -73,6 +73,24 @@ const db_launchers = [
         reference: []
     },
     {
+        name: "PCL2.Nova",
+        group: "pcl",
+        dev: "PCL-Community",
+        url: "https://github.com/PCL-Community/PCL2.Nova.App",
+        repo: "PCL-Community/PCL2.Nova.App",
+        state: "archived",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "GPL-3.0",
+        lang: "TypeScript",
+        features: [],
+        createdAt: "2025/01/26",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "跨平台 PCL 重写尝试。仓库已归档。最后提交早于 2026/10/20，不含地区限制代码。",
+        reference: []
+    },
+    {
         name: "PCL.Neo",
         group: "pcl",
         dev: "PCL-Community",
@@ -106,24 +124,6 @@ const db_launchers = [
         updatedAt: "2026/11/02",
         downloadLog: [],
         note: "使用 SwiftUI 重写、专为 macOS 打造的 PCL。仓库已归档。最后提交早于 2026/10/20，不含地区限制代码。",
-        reference: []
-    },
-    {
-        name: "PCL2.Nova",
-        group: "pcl",
-        dev: "PCL-Community",
-        url: "https://github.com/PCL-Community/PCL2.Nova.App",
-        repo: "PCL-Community/PCL2.Nova.App",
-        state: "archived",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "GPL-3.0",
-        lang: "TypeScript",
-        features: [],
-        createdAt: "2025/01/26",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "跨平台 PCL 重写尝试。仓库已归档。最后提交早于 2026/10/20，不含地区限制代码。",
         reference: []
     },
     {
@@ -325,6 +325,42 @@ const db_launchers = [
 
     // ---------------- 桌面端 ----------------
     {
+        name: "ATLauncher",
+        group: "desktop",
+        dev: "ATLauncher",
+        url: "https://atlauncher.com",
+        repo: "ATLauncher/ATLauncher",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "GPL-3.0",
+        lang: "Java",
+        features: [],
+        createdAt: "2013/09/02",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "以整合包为核心的启动器。",
+        reference: []
+    },
+    {
+        name: "MultiMC",
+        group: "desktop",
+        dev: "MultiMC",
+        url: "https://multimc.org",
+        repo: "MultiMC/Launcher",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "见仓库",
+        lang: "C++",
+        features: [],
+        createdAt: "2013/09/08",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "老牌多实例启动器。",
+        reference: []
+    },
+    {
         name: "HMCL",
         group: "desktop",
         dev: "HMCL-dev",
@@ -354,29 +390,6 @@ const db_launchers = [
         reference: []
     },
     {
-        name: "SJMCL",
-        group: "desktop",
-        dev: "SJMC",
-        url: "https://mc.sjtu.cn/sjmcl",
-        repo: "UNIkeEN/SJMCL",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "GPL-3.0",
-        lang: "TypeScript / Rust",
-        features: ["mirror", "authlib"],
-        createdAt: "2024/11/22",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "上海交通大学 Minecraft 社开发的跨平台启动器，基于 Tauri。1.4.0（2026/10/25）重构了下载系统。",
-        reference: [
-            {
-                title: "B站：SJMC Launcher | 新一代开源跨平台 Minecraft 启动器",
-                url: "https://www.bilibili.com/video/BV1gMnJzGEiM"
-            }
-        ]
-    },
-    {
         name: "X Minecraft Launcher",
         group: "desktop",
         dev: "Voxelum",
@@ -392,96 +405,6 @@ const db_launchers = [
         updatedAt: "2026/11/02",
         downloadLog: [],
         note: "XMCL，基于 Electron 的跨平台启动器。",
-        reference: []
-    },
-    {
-        name: "Prism Launcher",
-        group: "desktop",
-        dev: "PrismLauncher",
-        url: "https://prismlauncher.org",
-        repo: "PrismLauncher/PrismLauncher",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "GPL-3.0",
-        lang: "C++",
-        features: [],
-        createdAt: "2022/10/17",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "MultiMC 系多实例启动器，海外社区主流选择之一。",
-        reference: []
-    },
-    {
-        name: "MultiMC",
-        group: "desktop",
-        dev: "MultiMC",
-        url: "https://multimc.org",
-        repo: "MultiMC/Launcher",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "见仓库",
-        lang: "C++",
-        features: [],
-        createdAt: "2013/09/08",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "老牌多实例启动器。",
-        reference: []
-    },
-    {
-        name: "ATLauncher",
-        group: "desktop",
-        dev: "ATLauncher",
-        url: "https://atlauncher.com",
-        repo: "ATLauncher/ATLauncher",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "GPL-3.0",
-        lang: "Java",
-        features: [],
-        createdAt: "2013/09/02",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "以整合包为核心的启动器。",
-        reference: []
-    },
-    {
-        name: "GDLauncher",
-        group: "desktop",
-        dev: "gorilla-devs",
-        url: "https://gdlauncher.com",
-        repo: "gorilla-devs/GDLauncher-Carbon",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "见仓库",
-        lang: "TypeScript / Rust",
-        features: [],
-        createdAt: "2022/07/05",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "新版 GDLauncher（Carbon）。旧仓库 gorilla-devs/GDLauncher 已归档。",
-        reference: []
-    },
-    {
-        name: "Modrinth App",
-        group: "desktop",
-        dev: "Modrinth",
-        url: "https://modrinth.com/app",
-        repo: "modrinth/code",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "见仓库",
-        lang: "Rust / TypeScript",
-        features: [],
-        createdAt: "2021/06/20",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "Modrinth 官方启动器。仓库为 Modrinth 全站 monorepo，创建日期早于 App 发布。",
         reference: []
     },
     {
@@ -508,6 +431,60 @@ const db_launchers = [
         ]
     },
     {
+        name: "Modrinth App",
+        group: "desktop",
+        dev: "Modrinth",
+        url: "https://modrinth.com/app",
+        repo: "modrinth/code",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "见仓库",
+        lang: "Rust / TypeScript",
+        features: [],
+        createdAt: "2021/06/20",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "Modrinth 官方启动器。仓库为 Modrinth 全站 monorepo，创建日期早于 App 发布。",
+        reference: []
+    },
+    {
+        name: "GDLauncher",
+        group: "desktop",
+        dev: "gorilla-devs",
+        url: "https://gdlauncher.com",
+        repo: "gorilla-devs/GDLauncher-Carbon",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "见仓库",
+        lang: "TypeScript / Rust",
+        features: [],
+        createdAt: "2022/07/05",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "新版 GDLauncher（Carbon）。旧仓库 gorilla-devs/GDLauncher 已归档。",
+        reference: []
+    },
+    {
+        name: "Prism Launcher",
+        group: "desktop",
+        dev: "PrismLauncher",
+        url: "https://prismlauncher.org",
+        repo: "PrismLauncher/PrismLauncher",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "GPL-3.0",
+        lang: "C++",
+        features: [],
+        createdAt: "2022/10/17",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "MultiMC 系多实例启动器，海外社区主流选择之一。",
+        reference: []
+    },
+    {
         name: "WonderLab",
         group: "desktop",
         dev: "Blessing-Studio",
@@ -527,6 +504,29 @@ const db_launchers = [
             {
                 title: "B站：向您推荐，下一代跨平台 Minecraft 启动器 | WonderLab",
                 url: "https://www.bilibili.com/video/BV1Ss4y147XW"
+            }
+        ]
+    },
+    {
+        name: "SJMCL",
+        group: "desktop",
+        dev: "SJMC",
+        url: "https://mc.sjtu.cn/sjmcl",
+        repo: "UNIkeEN/SJMCL",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "GPL-3.0",
+        lang: "TypeScript / Rust",
+        features: ["mirror", "authlib"],
+        createdAt: "2024/11/22",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "上海交通大学 Minecraft 社开发的跨平台启动器，基于 Tauri。1.4.0（2026/10/25）重构了下载系统。",
+        reference: [
+            {
+                title: "B站：SJMC Launcher | 新一代开源跨平台 Minecraft 启动器",
+                url: "https://www.bilibili.com/video/BV1gMnJzGEiM"
             }
         ]
     },
@@ -698,29 +698,6 @@ const db_launchers = [
         ]
     },
     {
-        name: "Beacon Launcher",
-        group: "desktop",
-        dev: "fuqicn",
-        url: "https://github.com/fuqicn/beacon",
-        repo: "fuqicn/beacon",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos", "linux"],
-        license: "GPL-3.0",
-        lang: "C++ / QML",
-        features: ["mirror"],
-        createdAt: "2026/08/11",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "基于 Qt 6 的启动器。",
-        reference: [
-            {
-                title: "B站：全新的 MC 启动器 | BeaconLauncher",
-                url: "https://www.bilibili.com/video/BV1oLHe61EB3"
-            }
-        ]
-    },
-    {
         name: "Brix",
         group: "desktop",
         dev: "XinkuoaStudio",
@@ -740,6 +717,29 @@ const db_launchers = [
             {
                 title: "B站：来看看最新的MC启动器 | Brix",
                 url: "https://www.bilibili.com/video/BV1g1uR6YETE"
+            }
+        ]
+    },
+    {
+        name: "Beacon Launcher",
+        group: "desktop",
+        dev: "fuqicn",
+        url: "https://github.com/fuqicn/beacon",
+        repo: "fuqicn/beacon",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos", "linux"],
+        license: "GPL-3.0",
+        lang: "C++ / QML",
+        features: ["mirror"],
+        createdAt: "2026/08/11",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "基于 Qt 6 的启动器。",
+        reference: [
+            {
+                title: "B站：全新的 MC 启动器 | BeaconLauncher",
+                url: "https://www.bilibili.com/video/BV1oLHe61EB3"
             }
         ]
     },
@@ -1183,105 +1183,6 @@ const db_launchers = [
 
     // ---------------- 移动端 ----------------
     {
-        name: "Fold Craft Launcher",
-        group: "mobile",
-        dev: "FCL-Team",
-        url: "https://github.com/FCL-Team/FoldCraftLauncher",
-        repo: "FCL-Team/FoldCraftLauncher",
-        state: "active",
-        download: "ok",
-        platforms: ["android"],
-        license: "GPL-3.0",
-        lang: "Java",
-        features: ["mirror", "authlib"],
-        createdAt: "2022/10/19",
-        updatedAt: "2026/11/02",
-        downloadLog: [
-            {
-                date: "2026/10/25",
-                text: "1.3.4.2：移除启动时的网络归属地查询与游戏下载的地区禁用逻辑，发布说明注明此次更新没有禁用大陆地区下载。",
-                ref: "https://github.com/FCL-Team/FoldCraftLauncher/releases/tag/1.3.4.2"
-            }
-        ],
-        note: "FCL，基于 HMCL 与 PojavLauncher 的安卓启动器。",
-        reference: []
-    },
-    {
-        name: "Zalith Launcher 2",
-        group: "mobile",
-        dev: "ZalithLauncher",
-        url: "https://www.zalithlauncher.cn",
-        repo: "ZalithLauncher/ZalithLauncher2",
-        state: "active",
-        download: "limited",
-        platforms: ["android"],
-        license: "GPL-3.0",
-        lang: "Kotlin",
-        features: ["mirror", "authlib"],
-        createdAt: "2025/03/24",
-        updatedAt: "2026/11/02",
-        downloadLog: [
-            {
-                date: "2026/10/20",
-                text: "2.7.2：因相关法律法规，中国大陆地区暂时无法下载游戏、下载安装整合包及使用陶瓦联机。",
-                ref: "https://github.com/ZalithLauncher/ZalithLauncher2/releases/tag/2.7.2"
-            }
-        ],
-        note: "Zalith Launcher 的重写版本。",
-        reference: [
-            {
-                title: "B站：【ZL2】新一代安卓端 MC Java 版启动器",
-                url: "https://www.bilibili.com/video/BV1P5rLBWEZo"
-            }
-        ]
-    },
-    {
-        name: "Zalith Launcher",
-        group: "mobile",
-        dev: "ZalithLauncher",
-        url: "https://github.com/ZalithLauncher/ZalithLauncher",
-        repo: "ZalithLauncher/ZalithLauncher",
-        state: "archived",
-        download: "ok",
-        platforms: ["android"],
-        license: "GPL-3.0",
-        lang: "Java / C",
-        features: [],
-        createdAt: "2023/09/22",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "因维护困难已归档，由 Zalith Launcher 2 接替。最后提交早于 2026/10/20，不含地区限制代码。",
-        reference: [
-            {
-                title: "B站：手机也能玩 MC Java 版！ZalithLauncher 新版本",
-                url: "https://www.bilibili.com/video/BV12BXvYEEx1"
-            }
-        ]
-    },
-    {
-        name: "Amethyst (iOS)",
-        group: "mobile",
-        dev: "AngelAuraMC",
-        url: "https://github.com/AngelAuraMC/Amethyst-iOS",
-        repo: "AngelAuraMC/Amethyst-iOS",
-        state: "active",
-        download: "ok",
-        platforms: ["ios"],
-        license: "GPL-3.0",
-        lang: "Objective-C",
-        features: [],
-        createdAt: "2025/05/16",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "基于 PojavLauncher 的 iOS / iPadOS 启动器。",
-        reference: [
-            {
-                title: "B站：在iOS轻松启动JavaMC，附带两款改版",
-                url: "https://www.bilibili.com/video/BV15GjJ69Eh4"
-            }
-        ]
-    },
-    {
         name: "PojavLauncher",
         group: "mobile",
         dev: "PojavLauncherTeam",
@@ -1318,6 +1219,53 @@ const db_launchers = [
         reference: []
     },
     {
+        name: "Fold Craft Launcher",
+        group: "mobile",
+        dev: "FCL-Team",
+        url: "https://github.com/FCL-Team/FoldCraftLauncher",
+        repo: "FCL-Team/FoldCraftLauncher",
+        state: "active",
+        download: "ok",
+        platforms: ["android"],
+        license: "GPL-3.0",
+        lang: "Java",
+        features: ["mirror", "authlib"],
+        createdAt: "2022/10/19",
+        updatedAt: "2026/11/02",
+        downloadLog: [
+            {
+                date: "2026/10/25",
+                text: "1.3.4.2：移除启动时的网络归属地查询与游戏下载的地区禁用逻辑，发布说明注明此次更新没有禁用大陆地区下载。",
+                ref: "https://github.com/FCL-Team/FoldCraftLauncher/releases/tag/1.3.4.2"
+            }
+        ],
+        note: "FCL，基于 HMCL 与 PojavLauncher 的安卓启动器。",
+        reference: []
+    },
+    {
+        name: "Zalith Launcher",
+        group: "mobile",
+        dev: "ZalithLauncher",
+        url: "https://github.com/ZalithLauncher/ZalithLauncher",
+        repo: "ZalithLauncher/ZalithLauncher",
+        state: "archived",
+        download: "ok",
+        platforms: ["android"],
+        license: "GPL-3.0",
+        lang: "Java / C",
+        features: [],
+        createdAt: "2023/09/22",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "因维护困难已归档，由 Zalith Launcher 2 接替。最后提交早于 2026/10/20，不含地区限制代码。",
+        reference: [
+            {
+                title: "B站：手机也能玩 MC Java 版！ZalithLauncher 新版本",
+                url: "https://www.bilibili.com/video/BV12BXvYEEx1"
+            }
+        ]
+    },
+    {
         name: "星尘启动器",
         group: "mobile",
         dev: "StardustDev",
@@ -1341,6 +1289,58 @@ const db_launchers = [
             {
                 title: "B站：全新的MC移动端启动器 | SLAUNCHER",
                 url: "https://www.bilibili.com/video/BV125gkzuET9"
+            }
+        ]
+    },
+    {
+        name: "Zalith Launcher 2",
+        group: "mobile",
+        dev: "ZalithLauncher",
+        url: "https://www.zalithlauncher.cn",
+        repo: "ZalithLauncher/ZalithLauncher2",
+        state: "active",
+        download: "limited",
+        platforms: ["android"],
+        license: "GPL-3.0",
+        lang: "Kotlin",
+        features: ["mirror", "authlib"],
+        createdAt: "2025/03/24",
+        updatedAt: "2026/11/02",
+        downloadLog: [
+            {
+                date: "2026/10/20",
+                text: "2.7.2：因相关法律法规，中国大陆地区暂时无法下载游戏、下载安装整合包及使用陶瓦联机。",
+                ref: "https://github.com/ZalithLauncher/ZalithLauncher2/releases/tag/2.7.2"
+            }
+        ],
+        note: "Zalith Launcher 的重写版本。",
+        reference: [
+            {
+                title: "B站：【ZL2】新一代安卓端 MC Java 版启动器",
+                url: "https://www.bilibili.com/video/BV1P5rLBWEZo"
+            }
+        ]
+    },
+    {
+        name: "Amethyst (iOS)",
+        group: "mobile",
+        dev: "AngelAuraMC",
+        url: "https://github.com/AngelAuraMC/Amethyst-iOS",
+        repo: "AngelAuraMC/Amethyst-iOS",
+        state: "active",
+        download: "ok",
+        platforms: ["ios"],
+        license: "GPL-3.0",
+        lang: "Objective-C",
+        features: [],
+        createdAt: "2025/05/16",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "基于 PojavLauncher 的 iOS / iPadOS 启动器。",
+        reference: [
+            {
+                title: "B站：在iOS轻松启动JavaMC，附带两款改版",
+                url: "https://www.bilibili.com/video/BV15GjJ69Eh4"
             }
         ]
     }

@@ -79,7 +79,7 @@
         platform: new Set(),
         archived: false,
         search: '',
-        sort: 'download',
+        sort: 'created',
         onlyArchived: false,
         onlyNew: false
     };
@@ -267,7 +267,7 @@
         const cols = [...COLUMNS];
         if (gh) cols.splice(cols.length - 1, 0, { key: 'stars', label: '★', cls: 'c-date', sort: 'stars' });
         $('#board-head').innerHTML = `<tr>${cols.map((c) => `<th class="${c.cls || ''}">${c.sort
-            ? `<button type="button" data-sort="${c.sort}" ${filter.sort === c.sort ? 'aria-sort="descending"' : ''}>${c.label}</button>`
+            ? `<button type="button" data-sort="${c.sort}" ${filter.sort === c.sort ? `aria-sort="${c.sort === 'download' || c.sort === 'stars' ? 'descending' : 'ascending'}"` : ''}>${c.label}</button>`
             : c.label}</th>`).join('')}</tr>`;
         return cols.length;
     }
