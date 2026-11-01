@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启动器晋级赛</title>
+    <meta name="description" content="PCL 2.99.0.0 移除 Minecraft 下载功能后，记录各 Minecraft 启动器的维护状态与中国大陆下载可用性。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="启动器晋级赛">
+    <meta property="og:description" content="PCL 移除下载功能后，各 Minecraft 启动器的下载状态一览。">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="data/launchers.js"></script>
+</head>
+
+<body>
+    <header class="masthead wrap" id="top">
+        <div class="mast-bar">
+            <span id="issue-line"></span>
+            <nav class="mast-nav">
+                <a href="#board">积分榜</a>
+                <a href="#timeline">大事记</a>
+                <a href="#extra">场外</a>
+                <a href="#contribute">投稿</a>
+            </nav>
+        </div>
+        <h1 class="mast-title">启动器晋级赛</h1>
+        <div class="mast-sub">Minecraft 第三方启动器下载可用性记录</div>
+    </header>
+
+    <main>
+        <section class="lead wrap">
+            <article class="lead-story">
+                <p class="kicker">头条</p>
+                <h2 class="headline">PCL 不再提供 Minecraft 下载</h2>
+                <p class="lead-text">
+                    <time id="event-date"></time>，PCL 发布
+                    <a id="event-ref" target="_blank" rel="noopener">2.99.0.0</a>，称"为遵守相关法律法规"移除 MC 下载功能。
+                    同一天，PCL 社区版、Zalith Launcher 2 在中国大陆地区禁用了本体下载；HMCL 开发分支跟进后两天内撤回。
+                    此后又有 <b id="new-count">-</b> 款启动器首次公开，其中不少是移除了限制的 PCL 社区版分支。
+                    下表记录每个启动器现在还能不能下游戏。
+                </p>
+                <p class="byline">数据来自各项目的发布说明、PR 与提交记录，以官方说明为准 · 整理于 <time id="data-date"></time></p>
+            </article>
+
+            <aside class="clock" aria-label="PCL 停止提供下载以来的时长">
+                <div class="clock-label">PCL 停止下载</div>
+                <div class="clock-day"><b data-k="d">-</b><span>天</span></div>
+                <div class="clock-hms"><span data-k="h">--</span>:<span data-k="m">--</span>:<span data-k="s">--</span></div>
+                <div class="clock-bar"><span></span><em>0%</em></div>
+            </aside>
+        </section>
+
+        <section class="wrap">
+            <div id="tally" class="tally"></div>
+        </section>
+
+        <section id="board" class="wrap section">
+            <div class="sec-head">
+                <h2>积分榜</h2>
+                <button id="btn-gh" class="link-btn" type="button">加载 GitHub 星标</button>
+            </div>
+
+            <div class="filters">
+                <div class="tabs" id="f-group" role="tablist"></div>
+                <input id="f-search" class="search" type="search" placeholder="搜索名称、开发者、语言">
+            </div>
+            <div class="filters filters-2">
+                <div class="opts" id="f-download"><span class="opts-label">大陆下载</span></div>
+                <div class="opts" id="f-platform"><span class="opts-label">平台</span></div>
+                <label class="check"><input type="checkbox" id="f-archived"> 显示已归档</label>
+            </div>
+
+            <table class="board">
+                <thead id="board-head"></thead>
+                <tbody id="board-body"></tbody>
+            </table>
+            <p id="result-count" class="result-count"></p>
+        </section>
+
+        <div class="wrap cols">
+            <section id="timeline" class="section">
+                <div class="sec-head">
+                    <h2>大事记</h2>
+                </div>
+                <ol id="timeline-list" class="events"></ol>
+            </section>
+
+            <section id="extra" class="section">
+                <div class="sec-head">
+                    <h2>场外</h2>
+                </div>
+                <ul id="extra-list" class="extra"></ul>
+
+                <div id="contribute" class="contribute">
+                    <h3>投稿</h3>
+                    <p>数据都在 <code>data/launchers.js</code>，字段说明见 README。改下载状态时请在 <code>downloadLog</code> 里附上发布说明、PR 或公告链接。</p>
+                    <p id="contribute-links"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer wrap">
+        <span>本站内容仅供参考，不代表任何启动器项目的立场。</span>
+        <span>灵感来自 <a href="https://github.com/LYOfficial/BBSPK" target="_blank" rel="noopener">LYOfficial/BBSPK</a></span>
+    </footer>
+
+    <div id="pk-tray" class="pk-tray" hidden>
+        <div class="wrap pk-tray-inner">
+            <div id="pk-slots" class="pk-slots"></div>
+            <button id="pk-clear" class="link-btn" type="button">清空</button>
+            <button id="pk-open" class="pk-go" type="button">对阵</button>
+        </div>
+    </div>
+
+    <dialog id="pk-dialog" class="pk-dialog">
+        <div class="pk-dialog-head">
+            <h2>对阵表</h2>
+            <button id="pk-close" class="link-btn" type="button">关闭</button>
+        </div>
+        <div class="pk-table-wrap">
+            <table id="pk-table" class="pk-table"></table>
+        </div>
+    </dialog>
+
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
