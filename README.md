@@ -13,7 +13,9 @@
 - **大事记**：汇总所有 `downloadLog`，按日期列出下载限制的变化。
 - **GitHub 数据**：点"加载 GitHub 星标"会从 GitHub API 实时拉取星标数和最近推送时间，并多出一列可排序（未登录接口每小时限 60 次）。
 
-纯静态页面，无构建步骤，直接打开 `index.html` 或部署到任意静态托管即可。
+在线访问：https://cnklpz.github.io/LauncherPK/
+
+纯静态页面，无构建步骤，直接打开 `index.html` 或部署到任意静态托管即可。推送到 `master` 后 GitHub Pages 会自动更新。
 
 ## 目录
 
