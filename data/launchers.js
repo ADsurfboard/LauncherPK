@@ -698,6 +698,29 @@ const db_launchers = [
         ]
     },
     {
+        name: "苦力怕启动器",
+        group: "desktop",
+        dev: "苦力怕论坛",
+        url: "https://klp-launcher.com/",
+        repo: "",
+        state: "active",
+        download: "ok",
+        platforms: ["windows", "macos"],
+        license: "未公开源码",
+        lang: "Rust",
+        features: ["mirror", "authlib"],
+        createdAt: "2026/07/29",
+        updatedAt: "2026/11/02",
+        downloadLog: [],
+        note: "苦力怕论坛开发，公测中（1.3.0-beta.4，2026/11/01）。内置 AI 助手“小怕”，可分析崩溃、检查和安装模组；支持 Modrinth / CurseForge 资源下载、陶瓦联机，下载源按所在地区自动选择。macOS 版仅支持 Apple Silicon，Linux 与安卓版尚未推出。支持外置登录。中国大陆可下载游戏本体（开发方确认）。源码未公开，日期为开发方提供的建库日期。",
+        reference: [
+            {
+                title: "B站：当 MC 启动器有了 AI｜苦力怕启动器",
+                url: "https://www.bilibili.com/video/BV1kxnb66E5L"
+            }
+        ]
+    },
+    {
         name: "Brix",
         group: "desktop",
         dev: "XinkuoaStudio",
@@ -901,29 +924,6 @@ const db_launchers = [
             {
                 title: "B站：忘却的旋律启动器！回来了！",
                 url: "https://www.bilibili.com/video/BV1sQn16oEA9"
-            }
-        ]
-    },
-    {
-        name: "苦力怕启动器",
-        group: "desktop",
-        dev: "苦力怕论坛",
-        url: "https://klp-launcher.com/",
-        repo: "",
-        state: "active",
-        download: "ok",
-        platforms: ["windows", "macos"],
-        license: "未公开源码",
-        lang: "未知",
-        features: ["mirror"],
-        createdAt: "2026/10/23",
-        updatedAt: "2026/11/02",
-        downloadLog: [],
-        note: "苦力怕论坛 2026 年 7 月立项，公测中（1.3.0-beta.4，2026/11/01）。内置 AI 助手“小怕”，可分析崩溃、检查和安装模组；支持 Modrinth / CurseForge 资源下载、陶瓦联机，下载源按所在地区自动选择。macOS 版仅支持 Apple Silicon，Linux 与安卓版尚未推出。中国大陆可下载游戏本体（开发方确认）。日期为宣传视频发布日。",
-        reference: [
-            {
-                title: "B站：当 MC 启动器有了 AI｜苦力怕启动器",
-                url: "https://www.bilibili.com/video/BV1kxnb66E5L"
             }
         ]
     },
