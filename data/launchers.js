@@ -1343,6 +1343,29 @@ const db_launchers = [
                 url: "https://www.bilibili.com/video/BV15GjJ69Eh4"
             }
         ]
+    },
+    {
+        name: "QookiX Launcher Android",
+        group: "mobile",
+        dev: "ZhaYi",
+        url: "https://www.qookix.cn",
+        repo: "QookiX/QookiX-Launcher-Android",
+        state: "active",
+        download: "ok",
+        platforms: ["android"],
+        license: "GPL-3.0",
+        lang: "Kotlin / Rust",
+        features: ["mirror"],
+        createdAt: "2026/09/05",
+        updatedAt: "2026/11/03",
+        downloadLog: [],
+        note: "QookiX 启动器的 Android 版，支持多种渲染器，可与 QookiX 桌面端启动器搭配使用",
+        reference: [
+            {
+                title: "B站：全新的MC启动器 | QookiX Launcher",
+                url: "https://www.bilibili.com/video/BV1xvbp6UEo5"
+            }
+        ]
     }
 ];
 
