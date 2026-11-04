@@ -9,7 +9,7 @@ const SITE = {
     eventRef: "https://github.com/Meloong-Git/PCL/releases/tag/2.99.0.0",
     // 本项目仓库，格式 owner/name，留空则不显示相关链接
     repo: "cnklpz/LauncherPK",
-    dataUpdatedAt: "2026-11-03"
+    dataUpdatedAt: "2026/11/03"
 };
 
 // 分组
@@ -1126,11 +1126,11 @@ const db_launchers = [
         createdAt: "2026/10/27",
         updatedAt: "2026/11/03",
         downloadLog: [],
-        note: "hello my world launcher X，给 headlessmc 套了一层 Compose for Desktop 图形界面，自带运行时。当前 0.1-dev2，作者标注仍在开发中。下载走 Mojang 官方 version_manifest_v2，未发现地区限制，也未内置国内镜像源。进下载页需登录有效微软账号，README 说明这是 Mojang EULA 的要求而非本项目限制。支持微软账号、外置验证（LittleSkin 等 Yggdrasil 服务）与离线账号。GPL-3.0 开源，附自定义用户协议（LEGAL/用户协议.txt）。同时镜像发布到 CNB。",
+        note: "hello my world launcher X，给 headlessmc 套了一层 Compose for Desktop 图形界面，自带运行时。当前 0.1-dev3，作者标注仍在开发中。下载走 Mojang 官方 version_manifest_v2，未发现地区限制，也未内置国内镜像源。进下载页需登录有效微软账号，README 说明这是 Mojang EULA 的要求而非本项目限制。支持微软账号、外置验证（LittleSkin 等 Yggdrasil 服务）与离线账号。GPL-3.0 开源，附自定义用户协议（LEGAL/用户协议.txt）。同时镜像发布到 CNB。",
         reference: [
             {
-                title: "GitHub Releases：v0.1-dev2",
-                url: "https://github.com/xiaofanforfabric/HMWLX/releases/tag/v0.1-dev2"
+                title: "GitHub Releases：v0.1-dev3",
+                url: "https://github.com/xiaofanforfabric/HMWLX/releases/tag/v0.1-dev3"
             },
             {
                 title: "CNB Releases",
