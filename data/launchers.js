@@ -1084,12 +1084,20 @@ const db_launchers = [
         platforms: ["macos"],
         license: "GPL-3.0",
         lang: "Swift",
-        features: [],
+        features: ["mirror", "authlib"],
         createdAt: "2026/10/25",
-        updatedAt: "2026/11/02",
+        updatedAt: "2026/11/08",
         downloadLog: [],
-        note: "macOS 独占（Apple Silicon，macOS 26+），沿用 HMCL 的管理方式。",
+        note: "macOS 独占；Apple Silicon 版 macOS 26+，Intel 兼容版 macOS 12+。内置 BMCLAPI 国内镜像，支持自定义 authlib-injector / Yggdrasil API 外置登录。",
         reference: [
+            {
+                title: "正式版与芯片版本说明",
+                url: "https://github.com/ADsurfboard/MC-Harbor/releases/tag/v1.5.2-intel"
+            },
+            {
+                title: "下载源与外置登录实现",
+                url: "https://github.com/ADsurfboard/MC-Harbor/blob/62dcc29618c57f7d3babd2e9626aca745d84a299/backend/net/morben/shenggan/NativeBridge.java"
+            },
             {
                 title: "B站：MC Harbor｜为MacOS而生的启动器",
                 url: "https://www.bilibili.com/video/BV1gTHG6kESi"
